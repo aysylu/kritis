@@ -79,7 +79,10 @@ spec:
     publicKeyData: $PUBLIC_KEY
 EOF
 ```
-This `AttestationAuthority` will create [Attestation Note](https://github.com/grafeas/grafeas#definition-of-terms) in project specified in `$PROJECT` variable and attest valid images using the secret `my-attestator` which we created.
+This `AttestationAuthority` will create
+[Attestation](https://github.com/grafeas/grafeas/blob/master/proto/v1beta1/attestation.proto)
+[Note](https://github.com/grafeas/grafeas/blob/master/docs/grafeas_concepts.md)
+in project specified in `$PROJECT` variable and attest valid images using the secret `my-attestator` which we created.
 
 ### 3. Copy a vulnerable image
 
